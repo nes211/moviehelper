@@ -1,39 +1,40 @@
 package pl.tdelektro.carhelper.controller;
 
-import org.springframework.ai.chat.ChatResponse;
-import org.springframework.ai.chat.messages.UserMessage;
-import org.springframework.ai.chat.prompt.Prompt;
+import lombok.AllArgsConstructor;
 import org.springframework.ai.openai.OpenAiChatClient;
+import org.springframework.ai.parser.BeanOutputParser;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-import pl.tdelektro.carhelper.pojo.UserDTO;
+import pl.tdelektro.carhelper.pojo.Recommendation;
+import pl.tdelektro.carhelper.pojo.User;
 import pl.tdelektro.carhelper.service.UserServiceImpl;
-import reactor.core.publisher.Flux;
-
-import java.util.Map;
 
 @RestController
+@AllArgsConstructor
 public class ChatController {
 
-    private final OpenAiChatClient chatClient;
 
-    @Autowired
-    UserServiceImpl userService;
-    @Autowired
-    public ChatController(OpenAiChatClient chatClient) {
-        this.chatClient = chatClient;
-    }
+    private  OpenAiChatClient chatClient;
+    private UserServiceImpl userService;
 
     //Request from URL
-    @PostMapping("/ai/generate")
-    public Map generate(@RequestBody UserDTO user) {
-        String message = userService.getMessage(user);
-        return Map.of("generation", chatClient.call(message));
-    }
+    @PostMapping("/ai/moviehelper")
+        Recommendation generate(@RequestBody User user) {
 
+
+        BeanOutputParser<Recommendation> parser = new BeanOutputParser<>(Recommendation.class);
+
+            var prompt = userService.getPrompt(user);
+           var response = chatClient.call(prompt);
+            var content = response.getResult().getOutput().getContent();
+
+        return parser.parse(content);
+    }
 
     // Test redirect to URL www.tdelektro.pl
     @GetMapping("/webpage")

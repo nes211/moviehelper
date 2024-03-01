@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class UserDTO {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +27,7 @@ public class UserDTO {
     String rating;
 
     @Column(name = "score")
-    Double score;
+    int score;
 
     @Column(name = "actor")
     String actor;

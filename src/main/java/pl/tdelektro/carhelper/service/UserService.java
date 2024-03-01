@@ -1,8 +1,12 @@
 package pl.tdelektro.carhelper.service;
 
-import pl.tdelektro.carhelper.pojo.UserDTO;
+import org.springframework.ai.chat.prompt.Prompt;
+import pl.tdelektro.carhelper.pojo.Recommendation;
+import pl.tdelektro.carhelper.pojo.User;
 
 public interface UserService {
-    String getMessage(UserDTO user);
+    Recommendation getMessage(User user);
+
+    Prompt getPrompt(User user);
 
 }
