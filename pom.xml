@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.tdelektro</groupId>
-	<artifactId>carhelper</artifactId>
+	<artifactId>moviehelper</artifactId>
 	<version>0.0.1</version>
 	<name>carhelper</name>
 	<description>Api for users to improve diagnosis</description>
