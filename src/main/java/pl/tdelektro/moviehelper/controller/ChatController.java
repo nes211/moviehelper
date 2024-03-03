@@ -1,18 +1,17 @@
-package pl.tdelektro.carhelper.controller;
+package pl.tdelektro.moviehelper.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.ai.openai.OpenAiChatClient;
 import org.springframework.ai.parser.BeanOutputParser;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-import pl.tdelektro.carhelper.pojo.Recommendation;
-import pl.tdelektro.carhelper.pojo.User;
-import pl.tdelektro.carhelper.service.UserServiceImpl;
+import pl.tdelektro.moviehelper.pojo.Recommendation;
+import pl.tdelektro.moviehelper.pojo.User;
+import pl.tdelektro.moviehelper.service.UserServiceImpl;
 
 @RestController
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package pl.tdelektro.carhelper.configuration;
+package pl.tdelektro.moviehelper.configuration;
 
 
 import jakarta.servlet.*;

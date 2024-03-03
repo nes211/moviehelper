@@ -1,7 +1,7 @@
-package pl.tdelektro.carhelper.repository;
+package pl.tdelektro.moviehelper.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import pl.tdelektro.carhelper.pojo.User;
+import pl.tdelektro.moviehelper.pojo.User;
 
 public interface UserRepository extends CrudRepository<User, Long> {
 }

@@ -1,10 +1,10 @@
-package pl.tdelektro.carhelper;
+package pl.tdelektro.moviehelper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CarhelperApplicationTests {
+class MoviehelperApplicationTests {
 
 	@Test
 	void contextLoads() {

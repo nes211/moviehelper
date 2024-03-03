@@ -1,13 +1,13 @@
-package pl.tdelektro.carhelper;
+package pl.tdelektro.moviehelper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarhelperApplication {
+public class MoviehelperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarhelperApplication.class, args);
+		SpringApplication.run(MoviehelperApplication.class, args);
 	}
 
 }

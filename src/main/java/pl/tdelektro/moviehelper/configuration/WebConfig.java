@@ -1,4 +1,4 @@
-package pl.tdelektro.carhelper.configuration;
+package pl.tdelektro.moviehelper.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

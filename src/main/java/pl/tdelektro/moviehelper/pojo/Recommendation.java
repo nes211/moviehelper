@@ -1,4 +1,4 @@
-package pl.tdelektro.carhelper.pojo;
+package pl.tdelektro.moviehelper.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

@@ -1,14 +1,13 @@
-package pl.tdelektro.carhelper.service;
+package pl.tdelektro.moviehelper.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.parser.BeanOutputParser;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.tdelektro.carhelper.pojo.Recommendation;
-import pl.tdelektro.carhelper.pojo.User;
-import pl.tdelektro.carhelper.repository.UserRepository;
+import pl.tdelektro.moviehelper.pojo.Recommendation;
+import pl.tdelektro.moviehelper.pojo.User;
+import pl.tdelektro.moviehelper.repository.UserRepository;
 
 @Service
 @AllArgsConstructor
@@ -36,7 +35,8 @@ public class UserServiceImpl implements UserService{
                 score IMDB greater then: {score},
                 favourite actor {actor},
                 if something is not filled please omit it.
-                For input data generate list of best 5 movies with rating 
+                For input data generate list of best 5 movies with rating
+                As a title in response write: Top 5 {platform}:
                 Return in format: {format}
                 """;
 

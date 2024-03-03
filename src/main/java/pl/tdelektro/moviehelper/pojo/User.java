@@ -1,4 +1,4 @@
-package pl.tdelektro.carhelper.pojo;
+package pl.tdelektro.moviehelper.pojo;
 
 
 import jakarta.persistence.*;
