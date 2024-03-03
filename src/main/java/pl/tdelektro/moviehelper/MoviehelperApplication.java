@@ -10,4 +10,5 @@ public class MoviehelperApplication {
 		SpringApplication.run(MoviehelperApplication.class, args);
 	}
 
+
 }
