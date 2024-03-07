@@ -11,19 +11,19 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
 
 ## 2. Getting Started
 ### Installation
-
+<div class="wrap-text">
     Clone the project repository from Git.
     Import the project into your preferred Java IDE (designed in IntelliJ 2023.3).
     Ensure you have the Java version 17 installed.
-  
+</div>  
 
 ### Configuration
 <div class="wrap-text">
     Ensure database configurations are correctly set up in application.properties.
-    Modify email configurations in email.properties for access your service.    
+   <br> Modify credentials configurations in application.properties for access your Chat GPT 3.5.    
 </div>
 <br>
-<img alt="Email configuration" src="https://github.com/nes211/Workshop/blob/d7a3ef891ca3bd68eac09655cc065a444c3946ad/img/email_config.jpg">
+<img alt="Email configuration" src="https://github.com/nes211/moviehelper/blob/561a98fb164a11afaad200372edff21ebff77dde/img/application_config.jpg">
 
 ## 3. Features
 
@@ -116,7 +116,7 @@ Issue: The application fails to start, and an error message is displayed.
 Solution:
 <div class="wrap-text">
     Check if all required dependencies are installed and configured correctly.
-    Verify that the database connection settings in application.properties are accurate.
+    Verify that the security api Token in application.properties are accurate.
     Review the application logs for detailed error messages to pinpoint the issue.
 </div>
  
@@ -130,31 +130,10 @@ Solution:
     Ensure that the provided credentials are correct.
     Check the user roles and permissions to ensure proper access control.
 
-  ### 3. Email Notifications Not Sending
 
-Issue: Email notifications are not being sent to users upon repair completion.
-
-Solution:
-<div class="wrap-text">
-    Verify that the email service configuration in email.properties is correct, including the SMTP server settings.
-    Check if the email address provided for notifications is valid and accessible.
-    Review the application logs for any errors related to the email service.
-</div>
-
-### 4. Database Connection Issues
-
-Issue: The application encounters errors related to database connectivity.
-
-Solution:
-<div class="wrap-text">
-    Check if the database server is running and accessible. H2 server is running all the time with application.
-    Verify that the database credentials and connection settings in application.properties are accurate.
-    Test the connection manually using a database client or command-line tool.
-</div>
-    
 ## 13. Future Improvements
 <div class="wrap-text">
-    Roadmap for future development includes adding additional features such as user management page.
+    Roadmap for future development includes adding additional features such as small pics of movie and description.
     Feature requests and suggestions are encouraged.
 </div>
 
@@ -165,5 +144,5 @@ Solution:
 ## 15. Contact
 
     For support or inquiries, contact the project maintainers at nes211nes211nes@gmail.com.
-    Project repository: https://github.com/nes211/Workshop
+    Project repository: https://github.com/nes211/moviehelper
 
