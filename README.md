@@ -55,6 +55,7 @@ Search movies by:
 ## 6. Usage
 <div class="wrap-text">
     Running the Application:
+        
         Start the application locally using your IDE or by running mvn spring-boot:run in the terminal.
 </div>
 
