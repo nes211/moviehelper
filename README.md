@@ -11,10 +11,11 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
     Clone the project repository from Git.
     Import the project into your preferred Java IDE (designed in IntelliJ 2023.3).
     Ensure you have the Java version 17 installed.
+    Open index_helper.html file for setup search.
 
 ### Configuration
 <div class="wrap-text">
-    Ensure database configurations are correctly set up in application.properties. H2 is configured by default.
+    Ensure database configurations are correctly set up in application.properties.
     Modify email configurations in email.properties for access your service.
 
 
