@@ -3,10 +3,11 @@
 ## 1. Introduction
 <div class="wrap-text">
 Movie Helper is an assistant for selecting the best films. It enhances the evening by curating the finest movies available on a specific platform, making the process of choosing enjoyable. It enables users to browse through the most popular streaming platforms to verify the availability of titles and check their ratings on IMDb. To accomplish this, it leverages the artificial intelligence of ChatGPT 3.5. As a result, users receive a list of five selected films.
-
-    <img alt="Movie helper form" src="https://github.com/nes211/moviehelper/blob/4ba9abc880c0bd19aa39d38ea644bf29b85e7e7d/img/html_form.jpg">
-    <img alt="Postman queries" src="https://github.com/nes211/Workshop/blob/5637826ae8f2af306e69ecc3dc24b48aae1c8290/img/postman.jpg">
 </div>
+<div style="text-align: center">
+    <img alt="Movie helper aform" src="https://github.com/nes211/moviehelper/blob/4015c17337d36ca9e312e7560d9b5e218a081f41/img/html_form.jpg">
+</div>
+
 
 ## 2. Getting Started
 ### Installation
@@ -14,7 +15,7 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
     Clone the project repository from Git.
     Import the project into your preferred Java IDE (designed in IntelliJ 2023.3).
     Ensure you have the Java version 17 installed.
-    Open index_helper.html file for setup search.
+  
 
 ### Configuration
 <div class="wrap-text">
@@ -27,14 +28,8 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
 ## 3. Features
 
 <div class="wrap-text">
-    User Authentication and Authorization: Users can log in and add new user securely with new credentials. 
-    Admin can assign user with car in workshop. Basic authorization is implemented to ensure proper access 
-    control.
-    Repair status: The administrator adds a car to the database and automatically creates the first task 
-    basic inspection. Subsequently, additional repairs are added according to the owner's suggestions 
-    or faults detected during the inspection
-    Repair Status Check: Users can query the repair status of vehicles by providing his credentials.
-    Email Notifications: Email notifications are sent to users upon repair completion.
+
+
 </div>
 
 ## 4. Technologies Used
@@ -42,18 +37,13 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
     Spring Boot Framework: For developing RESTful APIs with basic authorization features.
     Hibernate: For object-relational mapping and data storage.
     Lombok: For reducing boilerplate code.
-    Field Validation: For validating input data like VIN number or password.
-    Email Service: For sending email notifications.
-    JUnit: For unit testing.
-    RestAssured: For integration testing.
-    Postman: For API testing and data input/output.
+    Open AI - Chat GPT 3.5: For search movies
     Git: For version control.
 
 ## 5. Application Structure
 
     src/main/java: Contains the application source code.
-    src/test/java: Contains unit and integration tests.
-    src/main/resources: Contains configuration files.
+    src/main/resources: Contains configuration files and search form.
 
 ## 6. Usage
 <div class="wrap-text">
@@ -63,9 +53,9 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
 
 <div class="wrap-text">
     Interacting with the API:
-        Use Postman to send POST requests to the /user/add endpoint.
-        Authenticate user using the Postman GET request to endpoint /user/email/{userEmail} with valid credentials.
-        Authenticate admin using the Postman all CRUD requests to all endpoints.
+        Use use index_form.html fill fields and submit.
+        Await for response.
+        Response is show as a list of 5 best movies from selected category.
         <br>Postman requests file included in repo: <img alt="Postman request file" src="[https://github.com/nes211/Workshop/blob/249e7df7c38367da0c3878e1564520ffb0b7f1ad/img/structore.jpg](https://github.com/nes211/Workshop/blob/1f99ddf38881f278ac7fa78365b7f3c3bdbdc730/Workshop.postman_collection.json)">
 </div>
 
