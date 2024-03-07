@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Dancing_Script;
+    src: url(../fonts/Dancing_Script.ttf);
+    font-weight: bold;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    left: 50%;
+    top: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #cccccc, #e6e6e6);
+} 
+
+input, select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  font-size: 18px;
+} 
+
+input[type=submit] {
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:16px;
+}
+
+h2 {
+  color: black;
+  font-family: Dancing_Script;
+  font-size: 60px;
+  font-weight: 600;    
+}
+h3 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 100;    
+}
+
+li {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 100;    
+}
+
+input[type=submit]:hover {
+  background-color: black; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to bottom, #00ff00, #add8e6);
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+}
+.button:hover {
+    background-color: #f2f2f2;
+}
