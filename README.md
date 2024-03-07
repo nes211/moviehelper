@@ -28,8 +28,12 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
 ## 3. Features
 
 <div class="wrap-text">
-
-
+Search movies by:
+    <br>    category,
+     <br>    platform,
+     <br>    age rating,
+     <br>    score IMDB,
+     <br>    favourite actor.
 </div>
 
 ## 4. Technologies Used
@@ -59,12 +63,8 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
     Await the response.
     The response will be displayed as a list of the top 5 movies from the selected category.
     
-        <br><img alt="Postman request file" src="[https://github.com/nes211/Workshop/blob/249e7df7c38367da0c3878e1564520ffb0b7f1ad/img/structore.jpg](https://github.com/nes211/Workshop/blob/1f99ddf38881f278ac7fa78365b7f3c3bdbdc730/Workshop.postman_collection.json)">
 </div>
-
-<br>
-<img alt="Postman queries" src="https://github.com/nes211/Workshop/blob/5637826ae8f2af306e69ecc3dc24b48aae1c8290/img/postman.jpg">
-<br>
+<img alt="Response" src="https://github.com/nes211/moviehelper/blob/cf5c65740fea0657f5c51cdbec24da503f5b19ca/img/html_response.jpg">
 <br>
 
 ## 7. Authentication and Authorization
