@@ -52,11 +52,14 @@ Movie Helper is an assistant for selecting the best films. It enhances the eveni
 </div>
 
 <div class="wrap-text">
-    Interacting with the API:
-        Use use index_form.html fill fields and submit.
-        Await for response.
-        Response is show as a list of 5 best movies from selected category.
-        <br>Postman requests file included in repo: <img alt="Postman request file" src="[https://github.com/nes211/Workshop/blob/249e7df7c38367da0c3878e1564520ffb0b7f1ad/img/structore.jpg](https://github.com/nes211/Workshop/blob/1f99ddf38881f278ac7fa78365b7f3c3bdbdc730/Workshop.postman_collection.json)">
+  Interacting with the API:
+
+    Fill out the fields in index_form.html.
+    Submit the form.
+    Await the response.
+    The response will be displayed as a list of the top 5 movies from the selected category.
+    
+        <br><img alt="Postman request file" src="[https://github.com/nes211/Workshop/blob/249e7df7c38367da0c3878e1564520ffb0b7f1ad/img/structore.jpg](https://github.com/nes211/Workshop/blob/1f99ddf38881f278ac7fa78365b7f3c3bdbdc730/Workshop.postman_collection.json)">
 </div>
 
 <br>
